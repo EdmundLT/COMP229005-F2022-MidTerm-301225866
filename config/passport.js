@@ -1,3 +1,7 @@
+// COMP229 | SEC005 | Midterm
+// Student Name: Long Tang
+// Student ID: 301225866
+// Date: 23 October 2022
 const passport = require('passport');
 
 module.exports = function() {

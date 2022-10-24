@@ -5,8 +5,11 @@
     <div class="row">
         <div class="offset-md-3 col-md-6">
             <h1><%= title %></h1>
-
-            <form class="form" method="POST">
+            <% if (!title) { %>
+                <form class="form" action="/todo/add" method="POST">
+            <% } else { %>
+                <form class="form" action="/todo/edit/<%= todo._id %>" method="POST">
+            <% } %>
                 <div class="form-group">
                     <input type="hidden"
                         name="id"
